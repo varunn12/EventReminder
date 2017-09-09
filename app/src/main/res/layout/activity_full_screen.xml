@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorPrimaryDark">
+
+        <ImageView
+            android:id="@+id/doubletick"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:padding="16dp"
+            android:src="@drawable/doubletick" />
+
+
+        <TextView
+            android:id="@+id/fullscreen_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/doubletick"
+            android:layout_centerHorizontal="true"
+            android:text="Field Assist Reminder"
+            android:textColor="#fff"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/fullscreen_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/fullscreen_title"
+            android:layout_centerHorizontal="true"
+
+            android:padding="16dp"
+            android:text="Time"
+
+            android:textColor="#fff"
+            android:textSize="30sp" />
+
+        <TextView
+            android:id="@+id/full_message"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="false"
+            android:layout_below="@+id/fullscreen_time"
+            android:layout_centerHorizontal="true"
+
+            android:paddingLeft="16dp"
+            android:text="Message"
+            android:textColor="#fff"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/full_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/full_message"
+            android:layout_centerHorizontal="true"
+            android:onClick="close"
+            android:layout_margin="16dp"
+            android:background="#fff"
+            android:padding="16dp"
+            android:text="End Reminder" />
+
+    </RelativeLayout>
+</layout>
